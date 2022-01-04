@@ -153,19 +153,17 @@ body {
   color: var(--main-text-color);
 }
 .header-icon {
-  align-items: baseline;
+  display: inline-flex;
+  align-items: center;
   margin-right: 10px;
-  fill: var(--main-text-color);
+  margin-bottom: -2px;
+  fill: currentColor;
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
-
-/* .header-icon:hover {
-  fill: var(--accent-color);
-} */
 
 /* Index.html */
 /* Герой */
@@ -224,10 +222,6 @@ body {
   border: none;
   border-radius: 4px;
   display: inline-block;
-}
-
-.hero-button:hover {
-  background-color: var(--hover-button-color);
 }
 
 /* Особенности */
@@ -473,7 +467,8 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer-contacts:hover {
+.footer-contacts:hover,
+.footer-contacts:focus {
   color: var(--wite-color);
 }
 .footer-contacts:focus {
@@ -482,6 +477,7 @@ body {
 /* Join us */
 .join-us {
   margin-left: 70px;
+  padding-top: 12px;
 }
 .join-us h2 {
   font-weight: 700;
@@ -514,7 +510,8 @@ body {
   margin-right: 10px;
 }
 
-.footer-links:hover {
+.footer-links:hover,
+.footer-links:focus {
   background-color: var(--accent-color);
 }
 
@@ -587,7 +584,8 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-items:hover {
+.project-items:hover,
+.project-items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
