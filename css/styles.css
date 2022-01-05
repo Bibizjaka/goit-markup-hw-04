@@ -68,7 +68,6 @@ body {
 .link,
 .projects-list {
   text-decoration: none;
-  display: inline-block;
 }
 .project-items {
   display: inline-block;
@@ -417,6 +416,7 @@ body {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo-link {
@@ -477,7 +477,7 @@ body {
 /* Join us */
 .join-us {
   margin-left: 70px;
-  padding-top: 12px;
+  align-items: baseline;
 }
 .join-us h2 {
   font-weight: 700;
@@ -542,8 +542,7 @@ body {
   margin-right: 8px;
   padding: 6px 20px;
 }
-.portfolio-button + .portfolio-button {
-}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
@@ -584,8 +583,8 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.project-items:hover,
-.project-items:focus {
+.project-items .link:hover,
+.project-items .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
